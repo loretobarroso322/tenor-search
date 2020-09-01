@@ -11,6 +11,9 @@ const express = require('express');
 // App Setup
 const app = express();
 
+// Somewhere near the top
+app.use(express.static('public'));
+
 // Middleware
 const exphbs  = require('express-handlebars');
 
